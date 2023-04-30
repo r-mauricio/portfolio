@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: #111827;
+}
+html {
+	overflow-x: hidden;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+	width: 7px;
+}
+
+html::-webkit-scrollbar-track {
+	background: #111827;
+	border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: #2f405c;
+	border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+	background: #3b485e;
+	border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+	background: #34445e;
+	border-radius: 10px;
+}
+/* Hamburger Menu */
+
+.hamburger {
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	transition: all;
+	position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 2px;
+	background: #fff;
+	transform: rotate(0);
+	transition: all 0.5s;
+}
+
+.hamburger-middle {
+	transform: translateY(7px);
+}
+
+.hamburger-bottom {
+	transform: translateY(14px);
+}
+
+.open {
+	transform: rotate(90deg);
+	transform: translateY(0px);
+}
+
+.open .hamburger-top {
+	transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+	display: none;
+}
+
+.open .hamburger-bottom {
+	transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* hover link */
+.link {
+	background-image: linear-gradient(to right, #324158, #e4e6eb 50%, #fff 50%);
+	background-size: 200% 100%;
+	background-position: -100%;
+	display: inline-block;
+	padding: 1px 0;
+	position: relative;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: all 0.3s ease-in-out;
+}
+
+.link:before {
+	content: "";
+	background: #c7d0d4;
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+	background-position: 0;
+}
+
+.link:hover::before {
+	width: 100%;
+}
