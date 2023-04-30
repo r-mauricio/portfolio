@@ -12,6 +12,7 @@ const item1 = (
 const item2 = (
 	<a
 		href="mailto:rafaels.m@outlook.com"
+		aria-label="click here to contact me via email"
 		target="_blank"
 		rel="noopener noreferrer"
 		className="items-center justify-center w-72 mx-auto px-5 py-4 text-md font-medium text-center text-ice  rounded-sm border border-darkIce  focus:ring-4   hover:bg-darkIce/10 focus:ring-gray-800 duration-300 ease-in-out hover:rounded-md">

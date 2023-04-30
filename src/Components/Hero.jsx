@@ -52,13 +52,13 @@ const Hero = () => {
 							enter="transition-opacity ease-in-out duration-1000"
 							enterFrom="opacity-0 scale-50"
 							enterTo="opacity-100 scale-100 ">
-							<a href="#" className="">
+							<div>
 								<img
 									src={picture}
 									alt="picture rafael"
 									className="w-72 h-72 rounded-md"
 								/>
-							</a>
+							</div>
 						</Transition>
 					</div>
 				</div>

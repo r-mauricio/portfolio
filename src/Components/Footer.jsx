@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
-
-import logo from "../../public/Rm.png";
 
 const Footer = () => {
 	return (
@@ -16,21 +14,24 @@ const Footer = () => {
 					<a
 						href="https://github.com/r-mauricio"
 						target="_blank"
-						rel="noopener noreferrer">
+						rel="noopener noreferrer"
+						aria-label="click here to check my github profile">
 						<AiFillGithub className="text-white text-xl hover:text-gray-300 hover:text-2xl duration-100 ease-linear " />
 					</a>
 
 					<a
 						href="https://www.linkedin.com/in/rafael-mauricio/"
 						target="_blank"
-						rel="noopener noreferrer">
+						rel="noopener noreferrer"
+						aria-label="click here to check my linkedin profile">
 						<AiFillLinkedin className="text-white text-xl hover:text-gray-300 hover:text-2xl duration-100 ease-linear" />
 					</a>
 
 					<a
 						href="mailto:rafaels.m@outlook.com"
 						target="_blank"
-						rel="noopener noreferrer">
+						rel="noopener noreferrer"
+						aria-label="click here to send me an email">
 						<AiOutlineMail className="text-white text-xl hover:text-gray-300 hover:text-2xl duration-100 ease-linear " />
 					</a>
 				</div>
@@ -40,16 +41,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// const Footer = () => {
-// 	return (
-// 		<div>
-// 			Footer
-// 			<AiFillGithub />
-// 			<AiFillLinkedin />
-// 			<AiOutlineGithub />
-// 			<AiOutlineLinkedin />
-// 			<AiOutlineMail />
-// 		</div>
-// 	);
-// };

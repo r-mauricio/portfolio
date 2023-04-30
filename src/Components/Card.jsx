@@ -35,7 +35,7 @@ const Card = ({ projects }) => {
 							<div
 								key={id}
 								className=" max-w-[300px] min-h-[360px] border rounded-md shadow bg-darkBlue border-darkBlack group hover:bg-bgColor  duration-300 ease-in-out ">
-								<a href={link}>
+								<a href={link} aria-label="click here to check project">
 									<img
 										className="h-44 w-full object-cover opacity-50 rounded-t-lg duration-300 ease-in-out group-hover:opacity-70"
 										src={img}
@@ -43,10 +43,10 @@ const Card = ({ projects }) => {
 									/>
 								</a>
 								<div className="p-5 group-hover:bg-bgColor duration-300 ease-in-out">
-									<a href={link}>
-										<h5 className="mb-1 text-xl font-bold tracking-wide text-white">
+									<a href={link} aria-label="click here to check project">
+										<h1 className="mb-1 text-xl font-bold tracking-wide text-white">
 											{title}
-										</h5>
+										</h1>
 									</a>
 									<p className="mb-3 text-gray-400">{desc}</p>
 									<div className="flex gap-4 items-center justify-center">
@@ -56,7 +56,8 @@ const Card = ({ projects }) => {
 										<a
 											href="https://github.com/r-mauricio/akropolis-website"
 											rel="noopener noreferrer"
-											target="_blank">
+											target="_blank"
+											aria-label="click here to check my github page">
 											<AiFillGithub className="text-xl hover:text-2xl duration-100 ease-linear" />
 										</a>
 									</div>
