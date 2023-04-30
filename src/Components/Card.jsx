@@ -50,7 +50,11 @@ const Card = ({ projects }) => {
 									</a>
 									<p className="mb-3 text-gray-400">{desc}</p>
 									<div className="flex gap-4 items-center justify-center">
-										<a href={link} rel="noopener noreferrer" target="_blank">
+										<a
+											href={link}
+											rel="noopener noreferrer"
+											target="_blank"
+											aria-label="click here to check project">
 											<FiExternalLink className="text-xl hover:text-2xl duration-200 ease-linear" />
 										</a>
 										<a
