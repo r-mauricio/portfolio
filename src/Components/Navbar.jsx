@@ -98,7 +98,7 @@ const Navbar = () => {
 							enter="transition-opacity ease-in-out duration-300"
 							enterFrom="opacity-0"
 							enterTo="opacity-100">
-							<a href="#" className="hover:opacity-90 ">
+							<a href="#" className="hover:opacity-90" aria-label="logo">
 								<img
 									src={logo}
 									alt="rafael logo"
@@ -130,7 +130,8 @@ const Navbar = () => {
 						{showLinks ? (
 							<button
 								className="ml-auto mr-3 open block hamburger md:hidden focus:outline-none group"
-								onClick={closeMenu}>
+								onClick={closeMenu}
+								aria-label="click here to close menu">
 								<span className="open duration-200 ease-in-out group-hover:bg-gray-600 hamburger-top"></span>
 								<span className="open duration-200 ease-in-out group-hover:bg-gray-600 hamburger-middle"></span>
 								<span className="open duration-200 ease-in-out group-hover:bg-gray-600 hamburger-bottom"></span>
@@ -146,7 +147,8 @@ const Navbar = () => {
 								enterTo="opacity-100">
 								<button
 									className="block mr-3 hamburger md:hidden focus:outline-none group"
-									onClick={openMenu}>
+									onClick={openMenu}
+									aria-label="click here to open menu">
 									<span className="duration-200 ease-in-out group-hover:bg-gray-600 hamburger-top"></span>
 									<span className="duration-200 ease-in-out group-hover:bg-gray-600 hamburger-middle"></span>
 									<span className="duration-200 ease-in-out group-hover:bg-gray-600 hamburger-bottom"></span>
