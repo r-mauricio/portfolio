@@ -11,7 +11,7 @@ const infoProjects = [
 		title: "Akropolis Home Website",
 		img: "/akropolishome.png",
 		desc: "Multipage website built for a local hotel using ReactJs with tailwindcss for styling",
-		link: "https://akropolishome.netlify.app",
+		link: "https://akropolishomeservice.com.br",
 	},
 ];
 export default infoProjects;
