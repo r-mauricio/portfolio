@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import profile from "../../public/profile.png";
 import picture from "../../public/picture.jpeg";
 
 import { usePrefersReducedMotion } from "../hooks/index";

@@ -5,7 +5,16 @@ import { usePrefersReducedMotion } from "../hooks/index";
 
 import AboutStatic from "./AboutStatic";
 
-const tech = ["ReactJS", "JavaScript (ES6+)", "NodeJS", "CSS", "HTML"];
+const tech = [
+	"ReactJS",
+	"JavaScript (ES6+)",
+	"TailwindCSS",
+	"Material UI",
+	"Unit Test",
+	"Rest API",
+	"Firebase",
+	"Redux",
+];
 
 const About = () => {
 	const [isShowing, setIsShowing] = useState(true);
@@ -48,10 +57,10 @@ const About = () => {
 								<p>
 									My interest in web development began when I started to wonder
 									how websites worked under the hood. That made me start
-									watching youtube videos on html, then css and I realized I
-									wanted to build things myself. Since than, I developed my
+									watching youtube videos on HTML, then CSS and I realized I
+									wanted to build things myself. Since then, I developed my
 									skills with a lot of studying and programming. And I'm still
-									excited about getting better with my work and be the best
+									excited about getting better with my work and being the best
 									developer I can be.
 								</p>
 							</p>
