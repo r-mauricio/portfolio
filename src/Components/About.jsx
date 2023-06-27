@@ -5,16 +5,8 @@ import { usePrefersReducedMotion } from "../hooks/index";
 
 import AboutStatic from "./AboutStatic";
 
-const tech = [
-	"ReactJS",
-	"JavaScript (ES6+)",
-	"TailwindCSS",
-	"Material UI",
-	"Unit Test",
-	"Rest API",
-	"Firebase",
-	"Redux",
-];
+const tech = ["ReactJS", "JavaScript (ES6+)", "TailwindCSS", "Material UI"];
+const tech2 = ["Unit Test", "Rest API", "Firebase", "Redux"];
 
 const About = () => {
 	const [isShowing, setIsShowing] = useState(true);
@@ -45,7 +37,7 @@ const About = () => {
 						<h1 className="text-3xl mb-8 tracking-wide font-semibold text-center pt-32 pb-8 ">
 							About Me
 						</h1>
-						<div className="space-y-2   text-gray-300 ">
+						<div className="mx-2 md:mx-6 lg:mx-0 space-y-2   text-gray-300 ">
 							<p>
 								Hi there! My name is Rafael and I love building things for the
 								web.
@@ -64,15 +56,27 @@ const About = () => {
 									developer I can be.
 								</p>
 							</p>
-							<p>Technologies I work with:</p>
-							<div className="flex">
-								<ul className="flex flex-col items-start justify-center list-[circle] md:flex-row md:items-center">
+							<p className="py-2">Technologies I work with:</p>
+							<div className="flex md:flex-col">
+								<ul className="flex flex-col list-[circle] md:flex-row md:items-center md:py-4 ">
 									{tech.map((techItem, i) => {
+										return (
+											<li
+												className="text-sm font-light tracking-wider text-darkIce ml-4 md:ml-8"
+												key={i}>
+												{techItem}
+											</li>
+										);
+									})}
+								</ul>
+
+								<ul className="flex flex-col items-start list-[circle] md:flex-row md:items-center">
+									{tech2.map((tech2Item, i) => {
 										return (
 											<li
 												className="text-sm font-light tracking-wider text-darkIce ml-8"
 												key={i}>
-												{techItem}
+												{tech2Item}
 											</li>
 										);
 									})}

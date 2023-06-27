@@ -61,7 +61,7 @@ const Contact = () => {
 						<h1 className="text-4xl text-center tracking-wide font-semibold mb-4">
 							Contact Me
 						</h1>
-						<div className="flex flex-col ">
+						<div className="flex flex-col mx-4">
 							{items.map((item, i) => (
 								<Transition.Child
 									key={i}
