@@ -5,7 +5,7 @@ import { usePrefersReducedMotion } from "../hooks/index";
 
 const item1 = (
 	<p className="py-6 pb-16 mx-auto text-xl max-w-xl  text-darkIce">
-		If you want to know a little bit more about myself, my work or about working
+		If you want to know a little bit more about me, my work, or working
 		together, please feel free to contact me
 	</p>
 );
