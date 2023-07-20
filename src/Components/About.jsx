@@ -5,7 +5,7 @@ import { usePrefersReducedMotion } from "../hooks/index";
 
 import AboutStatic from "./AboutStatic";
 
-const tech = ["ReactJS", "JavaScript (ES6+)", "TailwindCSS", "Material UI"];
+const tech = ["ReactJS", "JavaScript (ES6+)", "jQuery", "TailwindCSS", "Material UI"];
 const tech2 = ["Unit Test", "Rest API", "Firebase", "Redux"];
 
 const About = () => {
