@@ -23,7 +23,7 @@ const HeroStatic = () => {
 			</div>
 			<div className="flex mt-6 justify-center lg:mt-0 lg:justify-center lg:items-center  lg:w-1/2">
 				<a href="#" className="">
-					<img src={profile} alt="picture rafael" className="w-72 h-72" />
+					<img src={picture} alt="picture rafael" className="w-72 h-72" />
 				</a>
 			</div>
 		</div>
