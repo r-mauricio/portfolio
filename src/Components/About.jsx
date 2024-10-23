@@ -5,8 +5,8 @@ import { usePrefersReducedMotion } from "../hooks/index";
 
 import AboutStatic from "./AboutStatic";
 
-const tech = ["ReactJS", "JavaScript (ES6+)", "jQuery", "TailwindCSS", "Material UI"];
-const tech2 = ["Unit Test", "Rest API", "Firebase", "Redux"];
+const tech = ["ReactJS", "TypeScript", "React Native", "JavaScript", "jQuery", "Redux"];
+const tech2 = ["SQL", "TailwindCSS", "Unit Test", "Rest API", "Firebase", "Appwrite"];
 
 const About = () => {
 	const [isShowing, setIsShowing] = useState(true);
